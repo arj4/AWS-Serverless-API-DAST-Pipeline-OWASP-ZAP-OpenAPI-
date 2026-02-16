@@ -1,0 +1,11 @@
+{
+  "openapi": "3.0.1",
+  "info": { "title": "ZAP Weak API Demo", "version": "1.0.0" },
+  "servers": [{ "url": "https://rq2r4ufdl5.execute-api.ap-south-1.amazonaws.com/prod" }],
+  "paths": {
+    "/health": { "get": { "responses": { "200": { "description": "OK" } } } },
+    "/admin":  { "get": { "responses": { "200": { "description": "Admin (no auth demo)" } } } },
+    "/debug":  { "get": { "responses": { "200": { "description": "Debug info demo" } } } },
+    "/error":  { "get": { "responses": { "500": { "description": "Verbose error demo" } } } }
+  }
+}
